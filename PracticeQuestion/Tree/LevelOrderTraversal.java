@@ -1,4 +1,5 @@
-package PracticeQuestion.Tree;
+package BT;
+
 import java.util.Scanner;
 
 public class LevelOrderTraversal {
@@ -91,6 +92,7 @@ public class LevelOrderTraversal {
         return 1 + Math.max(height(root.left),height(root.right));
     }
 
+
     public static void main(String[] args) {
        createTree();
     //    System.out.println();
@@ -102,11 +104,12 @@ public class LevelOrderTraversal {
         
        int height = height(root) + 1;
 
-       for(int i=1;i<=height;i++){
-            System.out.print("Level " + i + " ");
-            nthLevel(root, i);
-            System.out.println();
-        }
+//       for(int i=1;i<=height;i++){
+//            System.out.print("Level " + i + " ");
+//            nthLevel(root, i);
+//            System.out.println();
+//        }
+        nthLevel(root, 3);
        
     }
 
